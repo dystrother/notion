@@ -56,9 +56,6 @@
     var date = `${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
 
     var greet;
-    
-    `${dayOfWeek}`;
-    
     if (hrs < 12)
         greet = 'good morning  ';
     else if (hrs >= 12 && hrs <= 17)
@@ -69,6 +66,7 @@
     document.getElementById('lbl').innerHTML = `
         <div class="container">
           <div id="date"> ${date}</div>
+          <div class="greeting">${dayOfWeek}</div>
           <div class="greeting">${greet}</div>
         <div/>
     `;
